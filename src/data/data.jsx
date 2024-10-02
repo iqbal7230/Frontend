@@ -5,7 +5,7 @@ export const data = {
     { name: 'My Tickets', path: '/my-tickets', icon: '🎟' },
     { name: 'All Events', path: '/all-events', icon: '📆' },
     { name: 'Get NFT Details', path: '/nft-details', icon: '💰' },
-    { name: 'Ticket Validation', path: '/ticket-validation', icon: '🔑' },
+    // { name: 'Ticket Validation', path: '/ticket-validation', icon: '🔑' },
     { name: 'Create New Event', path: '/new-Event', icon: '➕' },
 
   ],
@@ -82,5 +82,26 @@ export const data = {
       image: 'img/4.jpg',
       description: 'A night of pop music with performances from leading pop artists.',
     },
+  ],
+  revenue: {
+    totalRevenue: 5000.00,
+    averageOrderValue: 250.00,
+    ticketsSold: 20
+  },
+  recentOrders: [
+    {
+      orderNumber: '001',
+      purchaseDate: 'October 1, 2024',
+      customer: 'John Doe',
+      event: 'Rock Concert',
+      amount: '$300.00'
+    },
+    {
+      orderNumber: '002',
+      purchaseDate: 'October 2, 2024',
+      customer: 'Jane Smith',
+      event: 'Jazz Night',
+      amount: '$150.00'
+    }
   ],
 };

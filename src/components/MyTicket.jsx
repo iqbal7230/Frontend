@@ -1,5 +1,6 @@
 import React from 'react';
 import { data } from '../data/data';
+import TicketCard from '../cards/TicketCard'; 
 
 const MyTickets = () => {
   return (
@@ -8,11 +9,12 @@ const MyTickets = () => {
       <div className="grid grid-cols-1 gap-6">
         {data.myTickets.length > 0 ? (
           data.myTickets.map((ticket) => (
-            <div key={ticket.id} className="bg-white p-4 shadow-md rounded">
-              <h2 className="text-xl font-bold">Event: {ticket.eventName}</h2>
-              <p className="text-gray-600">Ticket ID: {ticket.ticketId}</p>
-              <p className="text-gray-600">Date: {ticket.date}</p>
-            </div>
+            <TicketCard
+              key={ticket.id}
+              eventName={ticket.eventName}
+              ticketId={ticket.ticketId}
+              date={ticket.date}
+            />
           ))
         ) : (
           <p>No tickets found.</p>
